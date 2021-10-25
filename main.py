@@ -5,7 +5,7 @@ import mysql.connector
 import sqlite3
 
 root=Tk()
-root.iconbitmap('C:/Users/Dell/OneDrive/Desktop/Projects/Python/tkinter/iconex.ico')
+root.iconbitmap('/iconex.ico')
 root.config(background="#077b8a")
 root.geometry("485x600")
 root.title("Data Base Interface")
@@ -55,7 +55,7 @@ def edit():
     top.title("Edit Details")
     top.geometry("485x600")
     top.maxsize(485,600)
-    top.iconbitmap('C:/Users/Dell/OneDrive/Desktop/Projects/Python/tkinter/iconex.ico')
+    top.iconbitmap('/iconex.ico')
     top.config(background="#077b8a")
 
     conn=sqlite3.connect('address_book.db')
@@ -120,7 +120,7 @@ def show():
     showcase=Toplevel()
     showcase.title("Records")
     showcase.geometry("485x600")
-    showcase.iconbitmap('C:/Users/Dell/OneDrive/Desktop/Projects/Python/tkinter/iconex.ico')
+    showcase.iconbitmap('/iconex.ico')
     showcase.config(background="#077b8a")
 
     head_text=Label(showcase,text="Records",bg="#d72631",fg="#5c3c92",font=("helvetica",20,"bold"),borderwidth=3, relief="ridge").grid(column=0,row=0,columnspan=2,pady=25,ipadx=184,ipady=18)
